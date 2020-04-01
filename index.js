@@ -9,7 +9,7 @@ const app = express();
 
 const client = redis.createClient(REDIS_PORT);
 
-//client.setex("node", 3600, "JS");
+//client.setex("node", 3600, "JS"); test
 
 const checkCache =  (req, res, next) =>{
     const {username} = req.params;
